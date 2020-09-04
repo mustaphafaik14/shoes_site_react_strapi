@@ -57,7 +57,7 @@ export default function FeaturedProducts() {
     <section className='section'>
       <Title title='Best Products' />
       <div className='container'>
-        <Slider {...settings} className='best_products product_list'>
+        <Slider {...settings} className='best_products'>
           {bestProducts.map((product) => {
             return <Product {...product} key={product.id} />
           })}
